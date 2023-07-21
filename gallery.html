@@ -93,6 +93,11 @@
                 <img src="img/gallery-1.jpg" id="fullImg" alt="">
                 <span onclick="closeFullImg()">X</span>
             </div>
+            
+             <div class="full-img" id="fullImgBox">
+                <img src="img/video-00.mp4" id="fullImg" alt="">
+                <span onclick="closeFullImg()">X</span>
+            </div>
 
             <div class="gallery">
 
@@ -240,6 +245,20 @@
             fullImgBox.style.display = 'none';
         }
 
+        // for gallery section 
+         var fullImgBox = document.getElementById('fullImgBox');
+        var fullImg = document.getElementById('fullImg');
+
+        function openFullImg(video) {
+            fullImgBox.style.display = 'flex';
+            fullImg.src = video;
+        }
+
+        function closeFullImg() {
+            fullImgBox.style.display = 'none';
+        }
+
+        
         
 
 
